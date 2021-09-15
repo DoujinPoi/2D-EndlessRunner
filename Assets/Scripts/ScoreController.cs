@@ -16,6 +16,7 @@ public class ScoreController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // reset
         currentScore = 0;
         lastScoreHighlight = 0;
     }
@@ -44,6 +45,7 @@ public class ScoreController : MonoBehaviour
 
     public void FinishScoring()
     {
+        // set high score
         if (currentScore > ScoreData.highScore)
         {
             ScoreData.highScore = currentScore;
